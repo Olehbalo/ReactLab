@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 18px;
+    font-size: 20px;
     background-color: #f3f0f0e7;
     width: 100%;
 `

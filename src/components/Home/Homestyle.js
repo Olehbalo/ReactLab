@@ -11,7 +11,7 @@ export const HeroWrapper = styled.div`
 export const Image = styled.img`
     width:600px;
     height: 500px;
-    border-radius: 25px;
+    border-radius: 30px;
 `
 
 export const TextWrapper = styled.div`
@@ -44,7 +44,7 @@ export const Button = styled.button`
     padding: 18px 32px;
     position: absolute;
     left: 50%;
-    background-color: #f3f3f3;
+    background-color: #c74eb;
     border: none;
     border-radius: 10px;
     transform: translate(-50%, 0);

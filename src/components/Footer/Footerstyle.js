@@ -9,16 +9,18 @@ export const HorizontalLine = styled.hr`
 `
 
 export const WrapperLogo = styled.img`
-    width: 80px;
-    height: 80px;
-    border-radius: 50px;
+    width: 150px;
+    height: 100px;
+    border-radius: 70px;
 `
 
 export const Links = styled.ul`
     display: flex;
     list-style: none;
-    padding: 0;
+    padding: 120;
+    
 `
 export const StyledText = styled.p`
-    font-size: 12px;
+    font-size: 16px;
 `
+

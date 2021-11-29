@@ -9,12 +9,12 @@ export const Footer = () => {
             <FooterWrapper>
                 <WrapperLogo src={Logo} alt="logo"></WrapperLogo>
                 <Links>
-                    <InstagramOutlined style={{margin: '10px'}}/>
-                    <YoutubeOutlined style={{margin: '10px'}}/>
-                    <FacebookOutlined style={{margin: '10px'}}/>
+                    <InstagramOutlined style={{margin: '20px'}}/>
+                    <YoutubeOutlined style={{margin: '20px'}}/>
+                    <FacebookOutlined style={{margin: '20px'}}/>
                 </Links>
             </FooterWrapper>
-            <HorizontalLine style={{marginTop: '0px', width: '80vw'}}/>
+            <HorizontalLine style={{marginTop: 'px', width: '90vw'}}/>
             <StyledText>2021 IoT @ Copyright all rights reserved</StyledText>
         </div>
     );

@@ -1,4 +1,4 @@
-import { HeroWrapper, Image, ImageText, ItemLabel, ItemList, Label, TextWrapper, Button, InformWrapper, Inform, InformLabel, AllInform, InformText } from "./Homestyle";
+import { HeroWrapper, Image, ImageText, ItemLabel, ItemList, Label, TextWrapper, Button, InformWrapper, Inform, InformLabel, AllInform } from "./Homestyle";
 import Plane1 from "../../image/Antonov_140.jpg";
 import Plane3 from "../../image/Antonov-148.jpg";
 import Plane4 from "../../image/Cossack.jpg";
@@ -30,16 +30,13 @@ export const Home = () => {
                 <ItemLabel>Services provided by our company</ItemLabel>
                 <AllInform>
                     <Inform>
-                        <InformLabel>500</InformLabel>
-                        <InformText>countries</InformText>
+                        <InformLabel>Skydiving</InformLabel>
                     </Inform>
                     <Inform>
-                        <InformLabel>2000</InformLabel>
-                        <InformText>places</InformText>
+                        <InformLabel>Кound the world journey</InformLabel>
                     </Inform>
                     <Inform>
-                        <InformLabel>5000</InformLabel>
-                        <InformText>feedbacks</InformText>
+                        <InformLabel>Holiday tours</InformLabel>
                     </Inform>
                 </AllInform>
             </InformWrapper>
