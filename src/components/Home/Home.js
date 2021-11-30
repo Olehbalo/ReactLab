@@ -11,8 +11,8 @@ export const Home = () => {
         <div>
             <HeroWrapper>
                 <TextWrapper>
-                    <Label>Plane of your dreams </Label>
-                    <ImageText>Your plane for adventure. <br/> Fly with us to different countries</ImageText>
+                    <Label>Planes of your dream </Label>
+                    <ImageText>Your plane for adventure. <br/> Fly with us to different parts of the world</ImageText>
                 </TextWrapper>
                 <Image src={Main} alt="main foto"></Image>
             </HeroWrapper>
@@ -30,18 +30,15 @@ export const Home = () => {
                 <ItemLabel>Services provided by our company</ItemLabel>
                 <AllInform>
                     <Inform>
-                        <InformLabel>Skydiving</InformLabel>
+                        <InformLabel>Sale of aircraft</InformLabel>
                     </Inform>
                     <Inform>
-                        <InformLabel>Кound the world journey</InformLabel>
-                    </Inform>
-                    <Inform>
-                        <InformLabel>Holiday tours</InformLabel>
+                        <InformLabel>Aircraft rental</InformLabel>
                     </Inform>
                 </AllInform>
             </InformWrapper>
 
-            <ItemLabel style={{marginTop:'200px'}}>Your trip</ItemLabel>
+            <ItemLabel style={{marginTop:'200px'}}>Types of aircraft sold by us</ItemLabel>
             <PlaneItems/>
         </div>
     );

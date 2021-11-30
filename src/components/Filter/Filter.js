@@ -29,9 +29,9 @@ export const Filter = () => {
                     <LabelText>Price:</LabelText>
                     <FilterSelector>
                         <option selected>Choose price:</option>
-                        <option value="Something">&lt;1000</option>
-                        <option value="Something">1000-3000</option>
-                        <option value="Something">&gt;3000</option>
+                        <option value="Something">&lt;500000</option>
+                        <option value="Something">500000-3000000</option>
+                        <option value="Something">&gt;3000000</option>
                     </FilterSelector>
                 </FilterWrapper>
                 <ApplyButton>Apply</ApplyButton>

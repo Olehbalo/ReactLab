@@ -1,36 +1,31 @@
 import { CatalogItem } from "../CatalogItem/CatalogItem";
 import { Wrapper } from "./Catalogstyle";
-import GoldCreekPond from "../../image/logo.png";
-import AppenzellDistrict from "../../image/Plane5.jpg";
-import Uttarakhand from "../../image/planeex.jpg";
-import Algeria from "../../image/planefotyou.jpg";
+import Antonov148 from "../../image/Antonov-148.jpg";
+import Antonov140 from "../../image/Antonov-148.jpg";
+import Cossack from "../../image/Cossack.jpg";
+
 
 
 let items = [
     {
-        name: "Gold Creek Pond",
-        price: 1200,
-        country: "USA",
-        image: GoldCreekPond
+        name: "Antonov-148",
+        price: 1200000,
+        country: "Ukraine",
+        image: Antonov148
     },
     {
-        name: "Appenzell District",
-        price: 700,
-        country: "Switzerland",
-        image: AppenzellDistrict
+        name: "Cossack",
+        price: 7005000,
+        country: "Ukraine",
+        image: Antonov140
     },
     {
         name: "Uttarakhand",
         price: 890,
-        country: "India",
-        image: Uttarakhand
+        country: "Ukraine",
+        image: Cossack
     },
-    {
-        name: "Algeria",
-        price: 2500,
-        country: "Algeria",
-        image: Algeria
-    },
+    
 ]
 
 export const Catalog = () => {
