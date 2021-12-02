@@ -4,7 +4,6 @@ import {Footer} from "./components/Footer/Footer"
 import {Header} from "./components/Header/Header"
 import { Home } from './components/Home/Home';
 import {Catalog} from "./components/Catalog/Catalog"
-import { Filter } from "./components/Filter/Filter";
 import {BrowserRouter, Switch, Route,} from "react-router-dom";
 function App() {
   return (
@@ -12,16 +11,14 @@ function App() {
           <div>
               <Switch>
                   <Route exact path="/">
-                      <Header isHomePage={true}/>
+                      <Header />
                       <Home/>
                   </Route>
                   <Route path="/catalog plane">
-                      <Header isHomePage={false}/>
-                      <Filter/>
                       <Catalog/>
                   </Route>
-                  <Route path="/travel">
-                      <Header isHomePage={true}/>
+                  <Route path="/comunication">
+                      <Header />
                   </Route>
               </Switch>
               <Footer/>

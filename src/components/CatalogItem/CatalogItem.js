@@ -3,21 +3,20 @@ import {
     TextWrapper,
     Image,
     Label,
-    Text,
+    SmallText,
     Button,
 
 } from "./CatalogItemstyle";
 
-export const CatalogItem = (props) => {
+export function CatalogItem(props) {
     return (
         <Wrapper>
-            <Image src={props.image}></Image>
+            <Image src={props.image}/>
             <TextWrapper>
                 <Label>{props.name}</Label>
-                <Text>{props.country}</Text>
-                <Text>Price: {props.price}$</Text>
+                <SmallText>Price: {props.price}$</SmallText>
             </TextWrapper>
-            <Button>View more</Button>
+            <Button onClick={() => props.function(props)}>View more</Button>
         </Wrapper>
     );
 }

@@ -1,30 +1,70 @@
-import { HeroWrapper, Image, ImageText, ItemLabel, ItemList, Label, TextWrapper, Button, InformWrapper, Inform, InformLabel, AllInform } from "./Homestyle";
+import { 
+    HeroWrapper, 
+    Image,
+    ImageText, 
+    ItemLabel, 
+    ItemList, 
+    Label, 
+    TextWrapper, 
+    Button, 
+    InformWrapper, 
+    Inform, 
+    InformLabel, 
+    AllInform } from "./Homestyle";
 import Plane1 from "../../image/Antonov_140.jpg";
 import Plane3 from "../../image/Antonov-148.jpg";
 import Plane4 from "../../image/Cossack.jpg";
 import Main from "../../image/header.jpg";
-import { Item } from "../Item/Item";
+import { useState } from "react";
+import { HomeItem } from "../HomeItem/HomeItem";
 import { PlaneItems } from "../Planes/PlaneItems";
 
 export const Home = () => {
+    const [viewMorePlanes, toggle] = useState(false);
+    const [planes, showAllPlanes] = useState([
+        {
+            name: "Antonov_140",
+            image: Plane1,
+
+        },
+        {
+            name: "Antonov-148",
+            image: Plane3,
+        },
+        {
+            name: "Cossack",
+            image: Plane4,
+        }
+    ]);
+
+    function changePlanes() {
+        if (!viewMorePlanes) {
+            showAllPlanes(planes.concat(planes));
+        } else {
+            showAllPlanes(planes.slice(0, 3));
+        }
+    }
+
+    function toggleView() {
+        toggle(!viewMorePlanes);
+        changePlanes();
+    }
     return (
         <div>
             <HeroWrapper>
                 <TextWrapper>
                     <Label>Planes of your dream </Label>
                     <ImageText>Your plane for adventure. <br/> Fly with us to different parts of the world</ImageText>
-                </TextWrapper>
-                <Image src={Main} alt="main foto"></Image>
+                    </TextWrapper>
+                <Image src={Main} alt="plane image"></Image>
             </HeroWrapper>
 
-            <ItemLabel>Planes for you</ItemLabel>
+            <ItemLabel>Propositions for you</ItemLabel>
             <ItemList>
-                <Item model={Plane1} name={"Antonov-128"}/>
-                <Item model={Plane3} name={"Antonov-140"}/>
-                <Item model={Plane4} name={"Cossack"}/>
+                {planes.map(plane => (<HomeItem key={plane.name.toString()} name = {plane.name} image={plane.image}/>))}
             </ItemList>
             
-            <Button>View more</Button>
+            <Button onClick={toggleView}>View more</Button>
 
             <InformWrapper>
                 <ItemLabel>Services provided by our company</ItemLabel>

@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const OuterWrapper = styled.div`
+    display: flex;
+    padding: 5px 80px;
+`
 export const Wrapper = styled.div`
     display: flex;
     padding: 5px 80px;
@@ -10,7 +14,7 @@ export const FilterWrapper = styled.div`
     flex: 10;
 `
 
-export const FilterSelector = styled.div`
+export const FilterSelector = styled.select`
     margin-right: 40px;
     padding: 10px 32px;
     border-radius: 10px;
