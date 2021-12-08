@@ -1,4 +1,4 @@
-import { StyleHeader, Wrapper, Nav, NavItem, Logo, Links, Search, NavWrapper  } from "./Headerstyle";
+import {  Wrapper, Nav, NavItem, Logo, Links, NavWrapper  } from "./Headerstyle";
 import {
     InstagramOutlined,
     YoutubeOutlined,
@@ -13,7 +13,7 @@ export const Header = () => {
             <Nav>
                 <Link to="/" style={{textDecoration: 'none', color: 'black'}}><NavItem>Home</NavItem></Link>
                 <Link to="/catalog plane" style={{textDecoration: 'none', color: 'black'}}><NavItem>Catalog plane</NavItem></Link>
-                <Link to="/communication" style={{textDecoration: 'none', color: 'black'}}><NavItem>Сommunication</NavItem></Link>
+                <Link to="/communication" style={{textDecoration: 'none', color: 'black'}}><NavItem>Cart</NavItem></Link>
             </Nav>
             <NavWrapper>
             <Links>

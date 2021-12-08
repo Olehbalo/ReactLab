@@ -67,7 +67,7 @@ export const Filter = (props) => {
                     <FilterSelector id="price" onChange={handlePrice}>
                         <option value="null">Choose price:</option>
                         <option value="1">&lt;300000</option>
-                        <option value="2">&gt;150000</option>
+                        <option value="2">&gt;300000</option>
                     </FilterSelector>
                     </FilterWrapper>
                 <ApplyButton onClick={updateItem}>Apply</ApplyButton>

@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 20px;
+    font-size: 18px;
     background-color: #f3f0f0e7;
     width: 100%;
 `
@@ -24,12 +24,12 @@ export const Logo = styled.a`
 `
 
 export const Nav = styled.ul`
-display: flex;
-list-style: none;
-justify-content: center;
-padding: 0;
-text-align: center;
-flex: 5;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    text-align: center;
+    flex: 5;
 `
 export const NavItem = styled.li`
     margin: 10px 30px; 
@@ -46,6 +46,7 @@ export const NavWrapper = styled.div`
     width: 200px;
     flex: 1;
 `
+
 export const Search = styled.input`
     border-color: #c4c4c4;
     border-style: solid;

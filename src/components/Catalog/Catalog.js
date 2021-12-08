@@ -8,7 +8,7 @@ import { Filter } from "../Filter/Filter";
 import axios from 'axios';
 import BarWave from 'react-cssfx-loading/lib/BarWave';
 import { Header } from "../Header/Header";
-import { ItemPage } from "../Items/Items";
+import { ItemPage } from "../Items/ItemPage";
 
 export const Catalog = () => {
     const [items, update] = useState(null);
@@ -18,7 +18,7 @@ export const Catalog = () => {
                 update(response.data)});
     }, []);
 
-    function updateItem(name, order, price, input) {
+    function updateItems(name, order, price, input) {
         console.log(name, order, price)
         axios.get(`http://localhost:8080/plane/params`, {
             params:
@@ -41,7 +41,7 @@ export const Catalog = () => {
         setView(props);
     }
 
-    function returnItem(items) {
+    function returnItems(items) {
         function createImage(name) {
             if (name == "Antonov148") 
                 return Antonov148;
@@ -53,7 +53,7 @@ export const Catalog = () => {
 
         if (items)
             return <>
-                <Filter function={updateItem}/>
+                <Filter function={updateItems}/>
                 <Wrapper>
                     {items.map(item => (
                         <CatalogItem key={item.name} image={createImage(item.name)} name={item.name} country={item.country} price={item.price} 
@@ -61,7 +61,7 @@ export const Catalog = () => {
                 </Wrapper>
             </>
         return <>
-            <Filter function={updateItem}/>
+            <Filter function={updateItems}/>
             <Wrapper style={{padding: "200px"}}>
                 <BarWave color="#000" width="100px" height="100px" duration="3s"/>
             </Wrapper>
@@ -69,7 +69,7 @@ export const Catalog = () => {
     }
 
     if (view == null)
-        return (returnItem(items))
+        return (returnItems(items))
     return (
         <>
             <Header/>
