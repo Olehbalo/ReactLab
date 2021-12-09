@@ -5,10 +5,12 @@ import {
     Label,
     ButtonWrapper} from "./Cartstyle";
 import { useSelector } from 'react-redux';
+import { useHistory  } from "react-router";
 import { CartItem } from "../CartItem/CartItem";
 
 
 export function Cart() {
+    let history = useHistory();
     const items = useSelector((state) => state.items);
 
     return (
@@ -20,9 +22,9 @@ export function Cart() {
                         planeAmount={item.planeAmount}/>))}
             </ItemsWrapper>
             <ButtonWrapper>
-                <Button>Back to Catalog</Button>
-                <Button>Continue</Button>
+                <Button onClick={history.goBack}>Back to Catalog</Button>
+                <Button onClick={() => history.push("/checkout")}>Continue</Button>
             </ButtonWrapper>
         </Wrapper>
     );
-}
+    }

@@ -1,7 +1,7 @@
 import {Image, Label, Text, TextWrapper, Wrapper, Price, BackButton, AddButton, ButtonWrapper} from "./ItemPagestyle";
 import { useDispatch } from "react-redux";
-import { addItem } from "../Redux/Actions";
-import { Provider } from 'react-redux';
+import { addItem } from "../redux/Actions";
+
 
 export function ItemPage(item) {
     const dispatch = useDispatch();

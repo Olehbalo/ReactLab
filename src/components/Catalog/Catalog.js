@@ -56,7 +56,7 @@ export const Catalog = () => {
                 <Filter function={updateItems}/>
                 <Wrapper>
                     {items.map(item => (
-                        <CatalogItem key={item.name} image={createImage(item.name)} name={item.name} country={item.country} price={item.price} 
+                        <CatalogItem key={item.name} image={createImage(item.name)} name={item.name}  price={item.price} 
                                     function={toggleView}/>))}
                 </Wrapper>
             </>

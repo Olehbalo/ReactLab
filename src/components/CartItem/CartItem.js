@@ -10,7 +10,7 @@ import {
     Button
 } from "./CartItemstyle";
 import { useDispatch } from "react-redux";
-import { deleteItem } from "../Redux/Actions";
+import { deleteItem } from "../redux/Actions";
 import { CloseOutlined } from '@ant-design/icons'
 import Antonov148 from "../../image/Antonov-148.jpg";
 import Antonov140 from "../../image/Antonov_140.jpg";
